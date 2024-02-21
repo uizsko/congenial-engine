@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money exchange </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="frst">
+        <h1>Money Exchange</h1>
+        <input type="number" id="userValue" placeholder="Enter ur value"><br>
+
+
+        <p>Select your currency</p>
+
+        <input type="radio" class="first" name="current" id="rad1" value="1"> USD
+        <br>
+
+        <input type="radio" class="first" name="current" id="rad2" value="2">EUR
+        <br>
+
+        <input type="radio" class="first" name="current" id="rad3" value="3">UAH
+        <br>
+
+
+
+        <p>Select your target currency</p>
+
+        <input type="radio" name="target" id="rad4" value="4">USD
+        <br>
+
+
+        <input type="radio" name="target" id="rad5" value="5">EUR
+        <br>
+
+        <input type="radio" name="target" id="rad6" value="6">UAH
+
+
+
+        <p>Result</p>
+        <button onClick="getValue()" class="Shresult">Result</button>
+        <span id="result"></span>
+
+
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
