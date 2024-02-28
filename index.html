@@ -5,50 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>money exchange </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Library</title>
 </head>
 
 <body>
-    <div class="frst">
-        <h1>Money Exchange</h1>
-        <input type="number" id="userValue" placeholder="Enter ur value"><br>
+    <div class="container">
+        <div class="main" id="main">
+            <div class="header">
+                <button class="NewBook hElement" id="addBook">Add new book</button>
+                <input type="text" class="search hElement">
+            </div>
+            <div class="bookList" id="bookList">
+
+                <div class="wrap firstBook">
+
+                    <span class="books firstBook" id="name1">The 7 Habits of Highly Effective People</span>
+                    <input type="text" class="InpRename firstBook" id="inpr1">
+                    <button class="apply firstBook" id="ap1">Apply</button>
+
+                    <div class="btnWrapper firstBook">
+
+                        <button class="rename firstBook" id="renamefr">Rename</button>
+                        <button class="delete firstBook" id="delete">Delete</button>
+
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <span class="books" id="name2">The 7 Habits of Highly Effective Families</span>
+                    <input type="text" class="InpRename" id="inpr2">
+                    <button class="apply" id="ap2">Apply</button>
+                    <div class="btnWrapper">
+                        <button class="rename" id="renamefr2">Rename</button>
+                        <button class="delete" id="delete2">Delete</button>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <span class="books" id="name3">Atomic Habits</span>
+                    <input type="text" class="InpRename" id="inpr3">
+                    <button class="apply" id="ap3">Apply</button>
+                    <div class="btnWrapper">
+                        <button class="rename" id="renamefr3">Rename</button>
+                        <button class="delete" id="delete3">Delete</button>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <span class="books" id="name4">Rich Dad Poor Dad</span>
+                    <input type="text" class="InpRename" id="inpr4">
+                    <button class="apply" id="ap4">Apply</button>
+                    <div class="btnWrapper">
+                        <button class="rename" id="renamefr4">Rename</button>
+                        <button class="delete" id="delete4">Delete</button>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <span class="books" id="name5">How to Talk to Anyone</span>
+                    <input type="text" class="InpRename" id="inpr5">
+                    <button class="apply" id="ap5">Apply</button>
+                    <div class="btnWrapper">
+                        <button class="rename" id="renamefr5">Rename</button>
+                        <button class="delete" id="delete5">Delete</button>
+                    </div>
+                </div>
 
 
-        <p>Select your currency</p>
-
-        <input type="radio" class="first" name="current" id="rad1" value="1"> USD
-        <br>
-
-        <input type="radio" class="first" name="current" id="rad2" value="2">EUR
-        <br>
-
-        <input type="radio" class="first" name="current" id="rad3" value="3">UAH
-        <br>
-
-
-
-        <p>Select your target currency</p>
-
-        <input type="radio" name="target" id="rad4" value="4">USD
-        <br>
-
-
-        <input type="radio" name="target" id="rad5" value="5">EUR
-        <br>
-
-        <input type="radio" name="target" id="rad6" value="6">UAH
-
-
-
-        <p>Result</p>
-        <button onClick="getValue()" class="Shresult">Result</button>
-        <span id="result"></span>
-
-
-
-
+            </div>
+        </div>
+    </div>
 </body>
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </html>
